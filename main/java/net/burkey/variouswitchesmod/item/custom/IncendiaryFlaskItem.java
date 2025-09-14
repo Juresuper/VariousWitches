@@ -1,16 +1,13 @@
 package net.burkey.variouswitchesmod.item.custom;
 
 import net.burkey.variouswitchesmod.entity.custom.IncendiaryFlaskEntity;
-import net.burkey.variouswitchesmod.item.ModItems;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.registries.ForgeRegistries;
 
 public class IncendiaryFlaskItem extends Item {
     public IncendiaryFlaskItem(Properties pProperties) {

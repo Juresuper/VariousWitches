@@ -5,7 +5,6 @@ import net.burkey.variouswitchesmod.entity.custom.CombustiveArrowEntity;
 import net.minecraft.client.renderer.entity.ArrowRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.Entity;
 
 public class CombustiveArrowRenderer extends ArrowRenderer<CombustiveArrowEntity> {
     public CombustiveArrowRenderer(EntityRendererProvider.Context pContext) {

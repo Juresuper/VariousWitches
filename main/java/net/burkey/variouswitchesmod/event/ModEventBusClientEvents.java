@@ -1,8 +1,6 @@
 package net.burkey.variouswitchesmod.event;
 
 import net.burkey.variouswitchesmod.VariousWitchesMod;
-import net.burkey.variouswitchesmod.entity.client.FireWitchModel;
-import net.burkey.variouswitchesmod.entity.client.ModModelLayers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

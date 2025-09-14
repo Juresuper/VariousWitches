@@ -1,11 +1,9 @@
 package net.burkey.variouswitchesmod.datagen;
 
 import net.burkey.variouswitchesmod.item.ModItems;
-import net.burkey.variouswitchesmod.potion.ModPotions;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.function.Consumer;

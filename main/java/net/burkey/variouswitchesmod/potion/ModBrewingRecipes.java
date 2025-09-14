@@ -1,13 +1,11 @@
 package net.burkey.variouswitchesmod.potion;
 
 import net.burkey.variouswitchesmod.item.ModItems;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
 
 public class ModBrewingRecipes {

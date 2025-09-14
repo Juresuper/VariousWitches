@@ -1,16 +1,12 @@
 package net.burkey.variouswitchesmod.event;
 
 import net.burkey.variouswitchesmod.VariousWitchesMod;
-import net.burkey.variouswitchesmod.config.VariousWitchesModCommonConfigs;
 import net.burkey.variouswitchesmod.entity.ModEntities;
 import net.burkey.variouswitchesmod.entity.custom.FireWitchEntity;
 import net.burkey.variouswitchesmod.network.PacketHandler;
 import net.burkey.variouswitchesmod.potion.ModBrewingRecipes;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.monster.piglin.AbstractPiglin;
-import net.minecraft.world.level.biome.Biomes;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.event.entity.SpawnPlacementRegisterEvent;

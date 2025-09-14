@@ -1,7 +1,6 @@
 package net.burkey.variouswitchesmod.entity.memorymodules;
 
 import net.burkey.variouswitchesmod.VariousWitchesMod;
-
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.memory.MemoryModuleType;
 import net.minecraftforge.registries.DeferredRegister;
@@ -9,8 +8,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Optional;
-
-import static net.tslat.smartbrainlib.SBLForge.MEMORY_TYPES;
 
 public class ModMemoryModules {
     public static final DeferredRegister<MemoryModuleType<?>> MEMORY_MODULE_TYPES =

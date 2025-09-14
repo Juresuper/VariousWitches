@@ -1,7 +1,6 @@
 package net.burkey.variouswitchesmod.datagen;
 
 import net.burkey.variouswitchesmod.VariousWitchesMod;
-import net.burkey.variouswitchesmod.world.ModBiomeModifiers;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;

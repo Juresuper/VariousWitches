@@ -1,7 +1,6 @@
 package net.burkey.variouswitchesmod.world;
 
 import net.burkey.variouswitchesmod.VariousWitchesMod;
-import net.burkey.variouswitchesmod.config.VariousWitchesModCommonConfigs;
 import net.burkey.variouswitchesmod.entity.ModEntities;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;

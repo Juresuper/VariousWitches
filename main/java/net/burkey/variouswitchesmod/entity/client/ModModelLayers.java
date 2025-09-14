@@ -1,6 +1,5 @@
 package net.burkey.variouswitchesmod.entity.client;
 
-import com.ibm.icu.text.Normalizer2;
 import net.burkey.variouswitchesmod.VariousWitchesMod;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.resources.ResourceLocation;

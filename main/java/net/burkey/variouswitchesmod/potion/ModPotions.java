@@ -1,14 +1,10 @@
 package net.burkey.variouswitchesmod.potion;
 
 import net.burkey.variouswitchesmod.VariousWitchesMod;
-import net.burkey.variouswitchesmod.effect.FieryCombustionEffect;
 import net.burkey.variouswitchesmod.effect.ModEffects;
-import net.minecraft.core.Holder;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;

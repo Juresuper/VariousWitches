@@ -2,8 +2,6 @@ package net.burkey.variouswitchesmod.entity.behaviours;
 
 import net.burkey.variouswitchesmod.entity.custom.FireWitchEntity;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.behavior.BehaviorUtils;
 import net.minecraft.world.entity.ai.memory.MemoryModuleType;
 import net.tslat.smartbrainlib.api.core.behaviour.custom.attack.AnimatableMeleeAttack;

@@ -8,8 +8,6 @@ import net.minecraftforge.network.NetworkDirection;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.PacketDistributor;
 import net.minecraftforge.network.simple.SimpleChannel;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class PacketHandler {
     private static final String PROTOCOL_VERSION = "";
