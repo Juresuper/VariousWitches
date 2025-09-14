@@ -1,0 +1,11 @@
+{
+  "type": "variouswitches:structure_spawn_modifier",
+  "structures": "minecraft:bastion_remnant",
+  "category": "monster",
+  "spawn": {
+    "type": "variouswitches:fire_witch",
+    "weight": 100,
+    "minCount": 1,
+    "maxCount": 3
+  }
+}

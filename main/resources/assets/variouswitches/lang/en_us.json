@@ -1,0 +1,47 @@
+{
+  "item.variouswitches.fire_witch_shard": "Fire witch shard",
+  "item.variouswitches.water_witch_shard": "Water witch shard",
+  "item.variouswitches.incendiary_flask": "Incendiary flask",
+  "item.variouswitches.fire_witch_spawn_egg": "Spawn Fire Witch",
+  "item.variouswitches.combustion_arrow": "Combustion Arrow",
+  "item.variouswitches.crimson_truffle_seeds": "Crimson Truffle Spores",
+  "item.variouswitches.crimson_truffle": "Crimson Truffle",
+  "item.variouswitches.crimson_truffle_stew": "Crimson Truffle Stew",
+
+
+  "effect.variouswitches.fiery_combustion": "Fiery combustion",
+  "effect.variouswitches.blazing_trail": "Blazing trail",
+  "effect.variouswitches.flame_propulsion": "Propulsion",
+  "effect.variouswitches.meteoric_fall": "Meteoric fall",
+  "effect.variouswitches.wart_spores": "Wart spores",
+
+
+
+  "creativetab.various_witches_tab": "Various Witches",
+
+  "item.minecraft.potion.effect.porcine_potion": "Porcine potion",
+  "item.minecraft.splash_potion.effect.porcine_potion": "Porcine splash potion",
+  "item.minecraft.lingering_potion.effect.porcine_potion": "Porcine lingering potion",
+
+
+  "item.minecraft.potion.effect.fiery_combustion_potion": "Fiery combustion potion",
+  "item.minecraft.splash_potion.effect.fiery_combustion_potion": "Fiery combustion splash potion",
+  "item.minecraft.lingering_potion.effect.fiery_combustion_potion": "Fiery combustion lingering potion",
+
+
+  "item.minecraft.potion.effect.blazing_trail_potion": "Blazing trail potion",
+  "item.minecraft.splash_potion.effect.blazing_trail_potion": "Blazing trail splash potion",
+  "item.minecraft.lingering_potion.effect.blazing_trail_potion": "Blazing trail lingering potion",
+
+  "item.minecraft.potion.effect.flame_propultion_potion": "Propultion potion",
+  "item.minecraft.splash_potion.effect.flame_propultion_potion": "Propultion splash potion",
+  "item.minecraft.lingering_potion.effect.flame_propultion_potion": "Propultion lingering potion",
+
+  "item.minecraft.potion.effect.wart_spores_potion": "Wart spores potion",
+  "item.minecraft.splash_potion.effect.wart_spores_potion": "Wart spores splash potion",
+  "item.minecraft.lingering_potion.effect.wart_spores_potion": "Wart spores lingering potion",
+
+  "item.minecraft.potion.effect.meteoric_fall_potion": "Meteoric fall potion",
+  "item.minecraft.splash_potion.effect.meteoric_fall_potion": "Meteoric fall splash potion",
+  "item.minecraft.lingering_potion.effect.meteoric_fall_potion": "Meteoric fall lingering potion"
+}
