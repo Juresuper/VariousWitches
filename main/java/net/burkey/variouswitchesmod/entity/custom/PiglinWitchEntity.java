@@ -61,7 +61,7 @@ import software.bernie.geckolib.core.object.PlayState;
 
 import java.util.List;
 
-public class FireWitchEntity extends AbstractPiglin implements SmartBrainOwner<FireWitchEntity>, GeoEntity, RangedAttackMob {
+public class PiglinWitchEntity extends AbstractPiglin implements SmartBrainOwner<PiglinWitchEntity>, GeoEntity, RangedAttackMob {
 
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
@@ -88,21 +88,21 @@ public class FireWitchEntity extends AbstractPiglin implements SmartBrainOwner<F
     }
 
     public void setSupporting(boolean supporting) {
-        FireWitchEntity.supporting = supporting;
+        PiglinWitchEntity.supporting = supporting;
     }
 
     public static boolean supporting = false;
 
 
     // Entity data accessors
-    private static final EntityDataAccessor<Integer> DATA_ANIMATION_STATE = SynchedEntityData.defineId(FireWitchEntity.class, EntityDataSerializers.INT);
+    private static final EntityDataAccessor<Integer> DATA_ANIMATION_STATE = SynchedEntityData.defineId(PiglinWitchEntity.class, EntityDataSerializers.INT);
 
-    private static final EntityDataAccessor<Integer> DATA_SHARED_ATTACK_COOLDOWN = SynchedEntityData.defineId(FireWitchEntity.class, EntityDataSerializers.INT);
-
-
+    private static final EntityDataAccessor<Integer> DATA_SHARED_ATTACK_COOLDOWN = SynchedEntityData.defineId(PiglinWitchEntity.class, EntityDataSerializers.INT);
 
 
-    public FireWitchEntity(EntityType<? extends AbstractPiglin> pEntityType, Level pLevel) {
+
+
+    public PiglinWitchEntity(EntityType<? extends AbstractPiglin> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
         this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.CROSSBOW));
         this.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1000000));
@@ -110,8 +110,8 @@ public class FireWitchEntity extends AbstractPiglin implements SmartBrainOwner<F
 
 
     public static AttributeSupplier.Builder createAttributes(){
-        return Monster.createMonsterAttributes().add(Attributes.MAX_HEALTH, 80D)
-                .add(Attributes.MOVEMENT_SPEED, 0.25D)
+        return Monster.createMonsterAttributes().add(Attributes.MAX_HEALTH, 85D)
+                .add(Attributes.MOVEMENT_SPEED, 0.15D)
                 .add(Attributes.ATTACK_DAMAGE, 1.0D)
                 .add(Attributes.FOLLOW_RANGE, 20.0D)
                 .add(Attributes.ARMOR, 1.0D);
@@ -174,10 +174,10 @@ public class FireWitchEntity extends AbstractPiglin implements SmartBrainOwner<F
 
 
     @Override
-    public List<? extends ExtendedSensor<? extends FireWitchEntity>> getSensors() {
+    public List<? extends ExtendedSensor<? extends PiglinWitchEntity>> getSensors() {
         return ObjectArrayList.of(
                 new HurtBySensor<>(),
-                new NearbyLivingEntitySensor<FireWitchEntity>()
+                new NearbyLivingEntitySensor<PiglinWitchEntity>()
                         .setPredicate((target, entity) -> target instanceof Player || target instanceof IronGolem
                              ),
                 new PiglinSpecificSensor<>());
@@ -187,7 +187,7 @@ public class FireWitchEntity extends AbstractPiglin implements SmartBrainOwner<F
     }
 
     @Override
-    public BrainActivityGroup<? extends FireWitchEntity> getCoreTasks() { // These are the tasks that run all the time (usually)
+    public BrainActivityGroup<? extends PiglinWitchEntity> getCoreTasks() { // These are the tasks that run all the time (usually)
         return BrainActivityGroup.coreTasks(
                 new LookAtTarget<>(),// Have the entity turn to face and look at its current look target
                 new SetWalkTargetToAttackTarget<>(), // ← This makes the entity move toward its attack target
@@ -199,9 +199,9 @@ public class FireWitchEntity extends AbstractPiglin implements SmartBrainOwner<F
 
 
     @Override
-    public BrainActivityGroup<? extends FireWitchEntity> getIdleTasks() { // These are the tasks that run when the mob isn't doing anything else (usually)
+    public BrainActivityGroup<? extends PiglinWitchEntity> getIdleTasks() { // These are the tasks that run when the mob isn't doing anything else (usually)
         return BrainActivityGroup.idleTasks(
-                new FirstApplicableBehaviour<FireWitchEntity>(      // Run only one of the below behaviours, trying each one in order. Include the generic type because JavaC is silly
+                new FirstApplicableBehaviour<PiglinWitchEntity>(      // Run only one of the below behaviours, trying each one in order. Include the generic type because JavaC is silly
                         new TargetOrRetaliate<>(),
                         new SetPlayerLookTarget<>(),          // Set the look target for the nearest player
                         new SetRandomLookTarget<>()),         // Set a random look target
@@ -213,7 +213,7 @@ public class FireWitchEntity extends AbstractPiglin implements SmartBrainOwner<F
     }
 
     @Override
-    public BrainActivityGroup<? extends FireWitchEntity> getFightTasks() {
+    public BrainActivityGroup<? extends PiglinWitchEntity> getFightTasks() {
         return BrainActivityGroup.fightTasks(
                 new InvalidateAttackTarget<>(),
 
@@ -321,17 +321,17 @@ public class FireWitchEntity extends AbstractPiglin implements SmartBrainOwner<F
     //SOUNDS
     @Override
     protected @Nullable SoundEvent getAmbientSound() {
-        return SoundEvents.WITCH_AMBIENT;
+        return SoundEvents.PIGLIN_AMBIENT;
     }
 
     @Override
     protected SoundEvent getHurtSound(DamageSource pDamageSource) {
-        return SoundEvents.WITCH_HURT;
+        return SoundEvents.PIGLIN_HURT;
     }
 
     @Override
     protected SoundEvent getDeathSound() {
-        return SoundEvents.WITCH_DEATH;
+        return SoundEvents.PIGLIN_DEATH;
     }
     @Override
     public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
@@ -339,7 +339,7 @@ public class FireWitchEntity extends AbstractPiglin implements SmartBrainOwner<F
         //controllerRegistrar.add(DefaultAnimations.genericWalkIdleController(this));
     }
 
-    private double getAnimationSpeed(FireWitchEntity fireWitchEntity) {
+    private double getAnimationSpeed(PiglinWitchEntity piglinWitchEntity) {
         int currentAnimation = getAnimationState();
 
         if (currentAnimation == ANIMATION_DRINK_POTION) {
@@ -349,7 +349,7 @@ public class FireWitchEntity extends AbstractPiglin implements SmartBrainOwner<F
     }
 
 
-    private PlayState predicate(software.bernie.geckolib.core.animation.AnimationState<FireWitchEntity> fireWitchEntityAnimationState) {
+    private PlayState predicate(software.bernie.geckolib.core.animation.AnimationState<PiglinWitchEntity> fireWitchEntityAnimationState) {
         int currentAnimation = getAnimationState();
 
         switch (currentAnimation) {

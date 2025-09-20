@@ -2,7 +2,7 @@ package net.burkey.variouswitchesmod.event;
 
 import net.burkey.variouswitchesmod.VariousWitchesMod;
 import net.burkey.variouswitchesmod.entity.ModEntities;
-import net.burkey.variouswitchesmod.entity.custom.FireWitchEntity;
+import net.burkey.variouswitchesmod.entity.custom.PiglinWitchEntity;
 import net.burkey.variouswitchesmod.network.PacketHandler;
 import net.burkey.variouswitchesmod.potion.ModBrewingRecipes;
 import net.minecraft.world.entity.SpawnPlacements;
@@ -18,7 +18,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
-        event.put(ModEntities.FIRE_WITCH.get(), FireWitchEntity.createAttributes().build());
+        event.put(ModEntities.PIGLIN_WITCH.get(), PiglinWitchEntity.createAttributes().build());
     }
 
     @SubscribeEvent
@@ -31,7 +31,7 @@ public class ModEventBusEvents {
     }
     @SubscribeEvent
     public static void registerSpawnPlacements(SpawnPlacementRegisterEvent event){
-        event.register(ModEntities.FIRE_WITCH.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.WORLD_SURFACE, AbstractPiglin::checkMobSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
+        event.register(ModEntities.PIGLIN_WITCH.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.WORLD_SURFACE, AbstractPiglin::checkMobSpawnRules, SpawnPlacementRegisterEvent.Operation.REPLACE);
 
     }
 

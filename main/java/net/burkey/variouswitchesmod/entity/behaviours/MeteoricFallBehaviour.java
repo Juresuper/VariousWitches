@@ -3,7 +3,7 @@ package net.burkey.variouswitchesmod.entity.behaviours;
 import com.mojang.datafixers.util.Pair;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.burkey.variouswitchesmod.effect.ModEffects;
-import net.burkey.variouswitchesmod.entity.custom.FireWitchEntity;
+import net.burkey.variouswitchesmod.entity.custom.PiglinWitchEntity;
 import net.burkey.variouswitchesmod.entity.memorymodules.ModMemoryModules;
 import net.burkey.variouswitchesmod.potion.ModPotions;
 import net.minecraft.server.level.ServerLevel;
@@ -25,7 +25,7 @@ import net.tslat.smartbrainlib.util.BrainUtils;
 import java.util.List;
 import java.util.function.Function;
 
-public class MeteoricFallBehaviour <E extends FireWitchEntity> extends ExtendedBehaviour<E> {
+public class MeteoricFallBehaviour <E extends PiglinWitchEntity> extends ExtendedBehaviour<E> {
     private static final List<Pair<MemoryModuleType<?>, MemoryStatus>> MEMORY_REQUIREMENTS = ObjectArrayList.of(
             Pair.of(MemoryModuleType.ATTACK_TARGET, MemoryStatus.VALUE_PRESENT),
             Pair.of(MemoryModuleType.ATTACK_COOLING_DOWN, MemoryStatus.VALUE_ABSENT),

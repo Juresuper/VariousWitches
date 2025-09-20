@@ -38,9 +38,10 @@ public class FireCloudEntity extends Entity {
             List<LivingEntity> targets = level().getEntitiesOfClass(LivingEntity.class, this.getBoundingBox().inflate(range), e -> e.isAlive());
 
             for (LivingEntity target : targets) {
-                    target.setSecondsOnFire(3);
-                    if(!target.hasEffect(MobEffects.FIRE_RESISTANCE))
+                    if(!target.hasEffect(MobEffects.FIRE_RESISTANCE)) {
+                        target.setSecondsOnFire(3);
                         target.hurt(level().damageSources().magic(), 1.0f);
+                    }
             }
         }
 

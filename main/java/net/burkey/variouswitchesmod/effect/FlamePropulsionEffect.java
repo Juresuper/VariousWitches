@@ -13,7 +13,7 @@ public class FlamePropulsionEffect extends MobEffect {
     public void applyEffectTick(LivingEntity entity, int amplifier) {
         if (!entity.level().isClientSide()) {
             if (entity.onGround()) {
-                double upwardForce = 1.5D ;
+                double upwardForce = 1.2D ;
 
                 entity.setDeltaMovement(
                         entity.getDeltaMovement().x,

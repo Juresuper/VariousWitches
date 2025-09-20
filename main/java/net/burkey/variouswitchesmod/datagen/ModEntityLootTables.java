@@ -22,7 +22,7 @@ public class ModEntityLootTables extends EntityLootSubProvider {
 
     @Override
     public void generate() {
-        this.add(ModEntities.FIRE_WITCH.get(),createFireWitchLoot());
+        this.add(ModEntities.PIGLIN_WITCH.get(),createFireWitchLoot());
     }
 
     private LootTable.Builder createFireWitchLoot() {

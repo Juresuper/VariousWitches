@@ -22,14 +22,14 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.various_witches_tab"))
                     .displayItems(((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.COMBUSTION_ARROW.get());
-                        pOutput.accept(ModItems.FIRE_WITCH_SHARD.get());
+                        pOutput.accept(ModItems.PIGLIN_WITCH_SHARD.get());
                         pOutput.accept(ModItems.INCENDIARY_FLASK.get());
                         pOutput.accept(ModItems.CRIMSON_TRUFFLE_SEEDS.get());
                         pOutput.accept(ModItems.CRIMSON_TRUFFLE.get());
                         pOutput.accept(ModItems.CRIMSON_TRUFFLE_STEW.get());
 
 
-                        pOutput.accept(ModItems.FIRE_WITCH_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.PIGLIN_WITCH_SPAWN_EGG.get());
                     }))
                     .build());
 }

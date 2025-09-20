@@ -2,7 +2,7 @@ package net.burkey.variouswitchesmod.entity.behaviours;
 
 import com.mojang.datafixers.util.Pair;
 import net.burkey.variouswitchesmod.effect.ModEffects;
-import net.burkey.variouswitchesmod.entity.custom.FireWitchEntity;
+import net.burkey.variouswitchesmod.entity.custom.PiglinWitchEntity;
 import net.burkey.variouswitchesmod.entity.memorymodules.ModMemoryModules;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
@@ -21,7 +21,7 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
-public class LastResortPotionBehaviour<E extends FireWitchEntity> extends DelayedBehaviour<E> {
+public class LastResortPotionBehaviour<E extends PiglinWitchEntity> extends DelayedBehaviour<E> {
 
 
     public LastResortPotionBehaviour(int delayTicks) {

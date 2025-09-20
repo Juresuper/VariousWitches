@@ -18,14 +18,14 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.COMBUSTION_ARROW);
-        simpleItem(ModItems.FIRE_WITCH_SHARD);
+        simpleItem(ModItems.PIGLIN_WITCH_SHARD);
         simpleItem(ModItems.INCENDIARY_FLASK);
         simpleItem(ModItems.WATER_WITCH_SHARD);
         simpleItem(ModItems.CRIMSON_TRUFFLE_SEEDS);
         simpleItem(ModItems.CRIMSON_TRUFFLE);
         simpleItem(ModItems.CRIMSON_TRUFFLE_STEW);
 
-        withExistingParent(ModItems.FIRE_WITCH_SPAWN_EGG.getId().getPath(),mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.PIGLIN_WITCH_SPAWN_EGG.getId().getPath(),mcLoc("item/template_spawn_egg"));
 
     }
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

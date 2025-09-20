@@ -5,6 +5,7 @@ import net.burkey.variouswitchesmod.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -42,12 +43,17 @@ public class IncendiaryFlaskEntity extends ThrowableItemProjectile {
             Entity entity1 = this.getOwner();
             DamageSource fireSource = level().damageSources().thrown(entity1, this);
             int i = entity.getRemainingFireTicks();
-            entity.setSecondsOnFire(5);
-            if (!entity.hurt(fireSource, 2.0f)){
-                entity.setRemainingFireTicks(i);
-            } else if (entity1 instanceof LivingEntity) {
-                this.doEnchantDamageEffects((LivingEntity)entity1, entity);
+            if(entity instanceof LivingEntity){
+                if(!(((LivingEntity) entity).hasEffect(MobEffects.FIRE_RESISTANCE))){
+                    entity.setSecondsOnFire(5);
+                    if (!entity.hurt(fireSource, 2.0f)){
+                        entity.setRemainingFireTicks(i);
+                    } else if (entity1 instanceof LivingEntity) {
+                        this.doEnchantDamageEffects((LivingEntity)entity1, entity);
+                    }
+                }
             }
+
             this.level().playSound(this,this.blockPosition(), SoundEvents.SPLASH_POTION_BREAK, SoundSource.NEUTRAL, 1.0f, 1.0f);
             this.discard();
 

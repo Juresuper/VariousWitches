@@ -1,13 +1,13 @@
 package net.burkey.variouswitchesmod.entity.behaviours;
 
-import net.burkey.variouswitchesmod.entity.custom.FireWitchEntity;
+import net.burkey.variouswitchesmod.entity.custom.PiglinWitchEntity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.ai.memory.MemoryModuleType;
 import net.minecraft.world.entity.monster.RangedAttackMob;
 import net.tslat.smartbrainlib.api.core.behaviour.custom.attack.AnimatableRangedAttack;
 import net.tslat.smartbrainlib.util.BrainUtils;
 
-public class FireWitchCustomShootBehaviour<E extends FireWitchEntity & RangedAttackMob> extends AnimatableRangedAttack<E> {
+public class FireWitchCustomShootBehaviour<E extends PiglinWitchEntity & RangedAttackMob> extends AnimatableRangedAttack<E> {
 
 
     public FireWitchCustomShootBehaviour(int delayTicks) {

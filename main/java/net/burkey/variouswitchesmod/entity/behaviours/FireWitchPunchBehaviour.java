@@ -1,6 +1,6 @@
 package net.burkey.variouswitchesmod.entity.behaviours;
 
-import net.burkey.variouswitchesmod.entity.custom.FireWitchEntity;
+import net.burkey.variouswitchesmod.entity.custom.PiglinWitchEntity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.ai.behavior.BehaviorUtils;
 import net.minecraft.world.entity.ai.memory.MemoryModuleType;
@@ -9,7 +9,7 @@ import net.tslat.smartbrainlib.util.BrainUtils;
 
 import java.util.function.Function;
 
-public class FireWitchPunchBehaviour<E extends FireWitchEntity>  extends AnimatableMeleeAttack<E>{
+public class FireWitchPunchBehaviour<E extends PiglinWitchEntity>  extends AnimatableMeleeAttack<E>{
     public FireWitchPunchBehaviour(int delayTicks) {
         super(delayTicks);
     }

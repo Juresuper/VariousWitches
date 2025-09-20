@@ -2,7 +2,7 @@ package net.burkey.variouswitchesmod.entity.behaviours;
 
 import com.mojang.datafixers.util.Pair;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
-import net.burkey.variouswitchesmod.entity.custom.FireWitchEntity;
+import net.burkey.variouswitchesmod.entity.custom.PiglinWitchEntity;
 import net.burkey.variouswitchesmod.entity.custom.IncendiaryFlaskEntity;
 import net.burkey.variouswitchesmod.entity.memorymodules.ModMemoryModules;
 import net.burkey.variouswitchesmod.item.ModItems;
@@ -19,7 +19,7 @@ import net.tslat.smartbrainlib.util.BrainUtils;
 import java.util.List;
 import java.util.function.Function;
 
-public class FlaskRainBehaviour<E extends FireWitchEntity> extends DelayedBehaviour<E> {
+public class FlaskRainBehaviour<E extends PiglinWitchEntity> extends DelayedBehaviour<E> {
     private static final List<Pair<MemoryModuleType<?>, MemoryStatus>> MEMORY_REQUIREMENTS = ObjectArrayList.of(
             Pair.of(MemoryModuleType.ATTACK_TARGET, MemoryStatus.VALUE_PRESENT),
             Pair.of(MemoryModuleType.ATTACK_COOLING_DOWN, MemoryStatus.VALUE_ABSENT),

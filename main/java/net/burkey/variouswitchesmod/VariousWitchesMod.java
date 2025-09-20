@@ -98,7 +98,7 @@ public class VariousWitchesMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.FIRE_WITCH_SHARD);
+            event.accept(ModItems.PIGLIN_WITCH_SHARD);
             event.accept(ModItems.WATER_WITCH_SHARD);
             event.accept(ModItems.COMBUSTION_ARROW);
         }
@@ -118,7 +118,7 @@ public class VariousWitchesMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            EntityRenderers.register(ModEntities.FIRE_WITCH.get(), FireWitchRenderer::new);
+            EntityRenderers.register(ModEntities.PIGLIN_WITCH.get(), FireWitchRenderer::new);
             EntityRenderers.register(ModEntities.INCENDIARY_FLASK_ENTITY.get(), ThrownItemRenderer::new);
             EntityRenderers.register(ModEntities.FIRE_AOE_CLOUD.get(), FireCloudRenderer::new);
             EntityRenderers.register(ModEntities.COMBUSTIVE_ARROW_ENTITY.get(), CombustiveArrowRenderer::new);

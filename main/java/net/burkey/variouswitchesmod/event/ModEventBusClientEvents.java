@@ -10,6 +10,6 @@ import net.minecraftforge.fml.common.Mod;
 public class ModEventBusClientEvents {
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event){
-        //event.registerLayerDefinition(ModModelLayers.FIRE_WITCH_LAYER, FireWitchModel::createBodyLayer);
+        //event.registerLayerDefinition(ModModelLayers.PIGLIN_WITCH_LAYER, FireWitchModel::createBodyLayer);
         }
 }

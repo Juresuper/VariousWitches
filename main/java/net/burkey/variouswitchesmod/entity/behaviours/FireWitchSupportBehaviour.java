@@ -3,7 +3,7 @@ package net.burkey.variouswitchesmod.entity.behaviours;
 import com.mojang.datafixers.util.Pair;
 import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.burkey.variouswitchesmod.effect.ModEffects;
-import net.burkey.variouswitchesmod.entity.custom.FireWitchEntity;
+import net.burkey.variouswitchesmod.entity.custom.PiglinWitchEntity;
 import net.burkey.variouswitchesmod.potion.ModPotions;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffects;
@@ -25,7 +25,7 @@ import net.tslat.smartbrainlib.util.BrainUtils;
 import java.util.List;
 import java.util.Random;
 
-public class FireWitchSupportBehaviour<E extends FireWitchEntity> extends DelayedBehaviour<E> {
+public class FireWitchSupportBehaviour<E extends PiglinWitchEntity> extends DelayedBehaviour<E> {
     private static final List<Pair<MemoryModuleType<?>, MemoryStatus>> MEMORY_REQUIREMENTS = ObjectArrayList.of(
             Pair.of(MemoryModuleType.NEARBY_ADULT_PIGLINS, MemoryStatus.VALUE_PRESENT),
             Pair.of(MemoryModuleType.ATTACK_COOLING_DOWN, MemoryStatus.VALUE_ABSENT)
@@ -79,7 +79,7 @@ public class FireWitchSupportBehaviour<E extends FireWitchEntity> extends Delaye
         }
     }
 
-    private void throwPotion(FireWitchEntity witch, LivingEntity target, Potion typeOfPotion) {
+    private void throwPotion(PiglinWitchEntity witch, LivingEntity target, Potion typeOfPotion) {
         Level level = witch.level();
         ThrownPotion potion = new ThrownPotion(level, witch);
 
