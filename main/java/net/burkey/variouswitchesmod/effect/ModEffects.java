@@ -12,10 +12,10 @@ public class ModEffects {
     public static final DeferredRegister<MobEffect> MOB_EFFECTS = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, VariousWitchesMod.MODID);
 
     public static final RegistryObject<MobEffect> FIERY_COMBUSTION_EFFECT = MOB_EFFECTS.register("fiery_combustion", () -> new FieryCombustionEffect(MobEffectCategory.HARMFUL, 0xBD2C0B));
-    public static final RegistryObject<MobEffect> BLAZING_TRAIL_EFFECT = MOB_EFFECTS.register("blazing_trail", () -> new BlazingTrailEffect(MobEffectCategory.NEUTRAL, 0xBD2C0B));
-    public static final RegistryObject<MobEffect> FLAME_PROPULSION_EFFECT = MOB_EFFECTS.register("flame_propulsion", () -> new FlamePropulsionEffect(MobEffectCategory.NEUTRAL, 0xBD2C0B));
-    public static final RegistryObject<MobEffect> METEORIC_FALL_EFFECT = MOB_EFFECTS.register("meteoric_fall", () -> new MeteoricFallEffect(MobEffectCategory.BENEFICIAL, 0xBD2C0B));
-    public static final RegistryObject<MobEffect> WART_SPORES_EFFECT = MOB_EFFECTS.register("wart_spores", () -> new WartSporesEffect(MobEffectCategory.BENEFICIAL, 0xBD2C0B));
+    public static final RegistryObject<MobEffect> BLAZING_TRAIL_EFFECT = MOB_EFFECTS.register("blazing_trail", () -> new BlazingTrailEffect(MobEffectCategory.NEUTRAL, 0xF5B376));
+    public static final RegistryObject<MobEffect> FLAME_PROPULSION_EFFECT = MOB_EFFECTS.register("flame_propulsion", () -> new FlamePropulsionEffect(MobEffectCategory.NEUTRAL, 0xFF4D4D));
+    public static final RegistryObject<MobEffect> METEORIC_FALL_EFFECT = MOB_EFFECTS.register("meteoric_fall", () -> new MeteoricFallEffect(MobEffectCategory.BENEFICIAL, 0x5C0D0D));
+    public static final RegistryObject<MobEffect> WART_SPORES_EFFECT = MOB_EFFECTS.register("wart_spores", () -> new WartSporesEffect(MobEffectCategory.BENEFICIAL, 0x940909));
 
     public static void register(IEventBus eventBus){
         MOB_EFFECTS.register(eventBus);
