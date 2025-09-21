@@ -33,20 +33,15 @@ public class S2CSpawnMeteoricParticlesPacket {
         buf.writeFloat(strength);
     }
 
-    // This handler runs on the main client thread thanks to consumerMainThread()
     public boolean handle(Supplier<NetworkEvent.Context> contextSupplier) {
-        System.out.println("teest");
         NetworkEvent.Context context = contextSupplier.get();
         context.enqueueWork(() -> {
-            // Get Minecraft instance safely
             Minecraft mc = Minecraft.getInstance();
             if (mc == null) return;
 
             Level level = mc.level;
             if (level == null) return;
-            System.out.println(level);
 
-            // Additional safety check - ensure we're in a world
             if (!level.isClientSide()) return;
 
             spawnParticlesClientSide(level);
@@ -54,7 +49,6 @@ public class S2CSpawnMeteoricParticlesPacket {
         return true;
     }
 
-    // Marked as only callable on the client. Now private since handle() is the entry point.
     private void spawnParticlesClientSide(Level level) {
         int rings = 5;
         int particlesPerRing = 20;
@@ -69,15 +63,13 @@ public class S2CSpawnMeteoricParticlesPacket {
                 double offsetZ = currentRadius * Math.sin(angle);
                 double posY = y + 0.1;
 
-                // Use addAlwaysVisibleParticle instead of addParticle for better reliability
                 level.addAlwaysVisibleParticle(
                         ParticleTypes.FLAME,
-                        true, // force particle to show regardless of distance
+                        true,
                         x + offsetX, posY, z + offsetZ,
                         0, 0, 0
                 );
 
-                // Alternatively, use the regular addParticle but ensure it's client-side only
             /*
             level.addParticle(
                 ParticleTypes.FLAME,

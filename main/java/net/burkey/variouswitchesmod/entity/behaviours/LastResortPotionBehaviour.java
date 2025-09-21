@@ -100,7 +100,6 @@ public class LastResortPotionBehaviour<E extends PiglinWitchEntity> extends Dela
         BrainUtils.setMemory(brain, MemoryModuleType.LOOK_TARGET, new EntityTracker(target, true));
         BrainUtils.setMemory(brain, MemoryModuleType.WALK_TARGET, new WalkTarget(new EntityTracker(target, false), this.speedMod.apply(entity, target), this.closeEnoughWhen.apply(entity, target)));
 
-            System.out.println("UNGA BUNGA");
         super.doDelayedAction(entity);
     }
 

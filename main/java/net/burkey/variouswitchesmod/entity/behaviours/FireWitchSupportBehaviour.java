@@ -46,7 +46,6 @@ public class FireWitchSupportBehaviour<E extends PiglinWitchEntity> extends Dela
     @Override
     protected boolean checkExtraStartConditions(ServerLevel level, E entity) {
         List<AbstractPiglin> nearbyPiglins = BrainUtils.getMemory(entity, MemoryModuleType.NEARBY_ADULT_PIGLINS);
-        System.out.println("TEST");
         AbstractPiglin randomPiglin = nearbyPiglins.get(new Random().nextInt(nearbyPiglins.size()));
 
         if (nearbyPiglins == entity) {
