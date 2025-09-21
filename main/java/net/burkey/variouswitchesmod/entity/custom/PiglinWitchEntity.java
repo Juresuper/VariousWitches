@@ -25,6 +25,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.animal.IronGolem;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.monster.RangedAttackMob;
+import net.minecraft.world.entity.monster.WitherSkeleton;
 import net.minecraft.world.entity.monster.piglin.AbstractPiglin;
 import net.minecraft.world.entity.monster.piglin.PiglinArmPose;
 import net.minecraft.world.entity.player.Player;
@@ -178,7 +179,7 @@ public class PiglinWitchEntity extends AbstractPiglin implements SmartBrainOwner
         return ObjectArrayList.of(
                 new HurtBySensor<>(),
                 new NearbyLivingEntitySensor<PiglinWitchEntity>()
-                        .setPredicate((target, entity) -> target instanceof Player || target instanceof IronGolem
+                        .setPredicate((target, entity) -> target instanceof Player || target instanceof WitherSkeleton
                              ),
                 new PiglinSpecificSensor<>());
 
