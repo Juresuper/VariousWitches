@@ -40,6 +40,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 requires(Items.FIRE_CHARGE, 1).
                 unlockedBy(getHasName(ModItems.CRIMSON_TRUFFLE.get()), has(ModItems.CRIMSON_TRUFFLE.get()))
                 .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD,ModItems.INCENDIARY_FLASK.get()).
+                requires(Items.GLASS_BOTTLE).
+                requires(ModItems.CRIMSON_TRUFFLE.get(), 1).
+                requires(Items.FIRE_CHARGE, 1).
+                unlockedBy(getHasName(ModItems.CRIMSON_TRUFFLE.get()), has(ModItems.CRIMSON_TRUFFLE.get()))
+                .save(pWriter);
 
 
     }

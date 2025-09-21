@@ -20,24 +20,31 @@
   "item.minecraft.potion.effect.porcine_potion": "Porcine Potion",
   "item.minecraft.splash_potion.effect.porcine_potion": "Splash Porcine Potion",
   "item.minecraft.lingering_potion.effect.porcine_potion": "Lingering Porcine Potion",
+  "item.minecraft.tipped_arrow.effect.porcine_potion": "Arrow of Porcine",
 
   "item.minecraft.potion.effect.fiery_combustion_potion": "Potion of Fiery Combustion",
   "item.minecraft.splash_potion.effect.fiery_combustion_potion": "Splash Potion of Fiery Combustion",
   "item.minecraft.lingering_potion.effect.fiery_combustion_potion": "Lingering Potion of Fiery Combustion",
+  "item.minecraft.tipped_arrow.effect.fiery_combustion_potion": "Arrow of Fiery Combustion",
+
 
   "item.minecraft.potion.effect.blazing_trail_potion": "Potion of Blazing Trail",
   "item.minecraft.splash_potion.effect.blazing_trail_potion": "Splash Potion of Blazing Trail",
   "item.minecraft.lingering_potion.effect.blazing_trail_potion": "Lingering Potion of Blazing Trail",
+  "item.minecraft.tipped_arrow.effect.fiery_blazing_trail_potion": "Arrow of Blazing Trail",
 
-  "item.minecraft.potion.effect.flame_propulsion_potion": "Potion of Flame Propulsion",
-  "item.minecraft.splash_potion.effect.flame_propulsion_potion": "Splash Potion of Flame Propulsion",
-  "item.minecraft.lingering_potion.effect.flame_propulsion_potion": "Lingering Potion of Flame Propulsion",
+  "item.minecraft.potion.effect.flame_propultion_potion": "Potion of Flame Propulsion",
+  "item.minecraft.splash_potion.effect.flame_propultion_potion": "Splash Potion of Flame Propulsion",
+  "item.minecraft.lingering_potion.effect.flame_propultion_potion": "Lingering Potion of Flame Propulsion",
+  "item.minecraft.tipped_arrow.effect.fiery_flame_propultion_potion": "Arrow of Flame Propultion",
 
   "item.minecraft.potion.effect.wart_spores_potion": "Potion of Wart Spores",
   "item.minecraft.splash_potion.effect.wart_spores_potion": "Splash Potion of Wart Spores",
   "item.minecraft.lingering_potion.effect.wart_spores_potion": "Lingering Potion of Wart Spores",
+  "item.minecraft.tipped_arrow.effect.fiery_wart_spores_potion": "Arrow of Wart Spores",
 
   "item.minecraft.potion.effect.meteoric_fall_potion": "Potion of Meteoric Fall",
   "item.minecraft.splash_potion.effect.meteoric_fall_potion": "Splash Potion of Meteoric Fall",
-  "item.minecraft.lingering_potion.effect.meteoric_fall_potion": "Lingering Potion of Meteoric Fall"
+  "item.minecraft.lingering_potion.effect.meteoric_fall_potion": "Lingering Potion of Meteoric Fall",
+  "item.minecraft.tipped_arrow.effect.meteoric_fall_potion": "Arrow of Meteoric Fall"
 }
